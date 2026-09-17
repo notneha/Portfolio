@@ -8,7 +8,7 @@ A modern, responsive personal portfolio showcasing my skills, professional exper
 
 [![GitHub](https://img.shields.io/badge/GitHub-notneha-181717?style=for-the-badge\&logo=github)](https://github.com/notneha)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Syeda%20Neha%20Zafar-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/syeda-neha-zafar/)
-[![Vercel](https://img.shields.io/badge/LinkedIn-Syeda%20Neha%20Zafar-0A66C2?style=for-the-badge\&logo=vercel)](https://portfolio-delta-gilt-5exjz93co0.vercel.app/)
+[![Vercel](https://img.shields.io/badge/Vercel-Portfolio-0A66C2?style=for-the-badge\&logo=vercel)](https://portfolio-delta-gilt-5exjz93co0.vercel.app/)
 
 </div>
 
