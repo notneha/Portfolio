@@ -163,7 +163,7 @@ export function Hero() {
 
           <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[2rem] glass">
             <Image
-              src="public/Avatar.png"
+              src="/Avatar.png"
               alt={personal.name}
               fill
               priority
