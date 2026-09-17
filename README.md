@@ -1,103 +1,366 @@
 # Syeda Neha Zafar — Portfolio
 
-A minimal, premium, fully responsive portfolio site built from a single resume-driven data file. Dark mode by default, glassmorphic cards, an animated vector-embedding signature graphic in the hero, and scroll-reveal motion throughout.
+<div align="center">
 
-**Stack:** Next.js 15 (App Router) · React 19 · TypeScript (strict) · Tailwind CSS · Framer Motion · lucide-react
+### Software Engineer | AI/ML Engineer
 
-## Features
+A modern, responsive personal portfolio showcasing my skills, professional experience, projects, and journey in software engineering and artificial intelligence.
 
-- Hero with animated typing effect, resume download, and a signature animated "vector field" graphic (nodes/edges evoking embeddings — the resume's own domain)
-- Dark/light theme toggle (persisted to `localStorage`)
-- Sections: About, Skills, Experience (timeline), Projects, Education, Certifications, Contact
-- Contact form (front-end ready — wire up an endpoint via `.env`) plus a copy-to-clipboard email button
-- Back-to-top button, subtle custom cursor, smooth scrolling, scroll-reveal animation
-- SEO: metadata, Open Graph, Twitter Card, JSON-LD structured data, dynamic `sitemap.xml` and `robots.txt`
-- Accessible: semantic HTML, ARIA labels, visible focus states, keyboard navigable, `prefers-reduced-motion` respected
-- All content lives in one file — `data/resume.ts` — nothing else needs touching to update copy
+[![GitHub](https://img.shields.io/badge/GitHub-notneha-181717?style=for-the-badge\&logo=github)](https://github.com/notneha)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Syeda%20Neha%20Zafar-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/syeda-neha-zafar/)
 
-## Getting started
+</div>
 
-### Install
+---
+
+## 📔 Table of Contents
+
+* [About](#-about)
+* [Features](#-features)
+* [Tech Stack](#️-tech-stack)
+* [Folder Structure](#-folder-structure)
+* [Getting Started](#-getting-started)
+* [Customization](#-customization)
+* [Screenshots](#-screenshots)
+* [Deployment](#-deployment)
+* [Future Improvements](#-future-improvements)
+* [Contributing](#-contributing)
+* [Acknowledgements](#-acknowledgements)
+* [Connect With Me](#-connect-with-me)
+
+---
+
+## 👩‍💻 About
+
+Hi, I'm **Syeda Neha Zafar**, a Software Engineering graduate passionate about Artificial Intelligence, Machine Learning, and Software Development.
+
+I enjoy building intelligent applications, developing practical solutions, and exploring technologies that connect AI with real-world problems.
+
+This portfolio is designed to showcase my professional experience, technical skills, projects, education, and achievements in one place.
+
+### Areas of Interest
+
+* Artificial Intelligence
+* Machine Learning
+* AI Application Development
+* Python Development
+* Django and FastAPI
+* Data Science and Analytics
+* Full-Stack Web Development
+
+---
+
+## ✨ Features
+
+* Modern and responsive portfolio design.
+* Dark and light theme support.
+* Animated hero section.
+* Professional introduction.
+* Technical skills showcase.
+* Work experience timeline.
+* Projects section.
+* Education and certifications.
+* Contact section.
+* Resume download functionality.
+* Smooth scrolling and interactive animations.
+* Responsive design for desktop, tablet, and mobile devices.
+* SEO-friendly metadata.
+* Clean and maintainable code structure.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology    | Purpose                       |
+| ------------- | ----------------------------- |
+| Next.js       | React framework               |
+| React         | User interface                |
+| TypeScript    | Type-safe development         |
+| Tailwind CSS  | Styling and responsive design |
+| Framer Motion | Animations and transitions    |
+| Lucide React  | Icons                         |
+| ESLint        | Code quality                  |
+| Git           | Version control               |
+| GitHub        | Repository hosting            |
+
+---
+
+## 📁 Folder Structure
+
+```text
+Portfolio/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   ├── sitemap.ts
+│   └── robots.ts
+│
+├── components/
+│   ├── Hero.tsx
+│   ├── Navbar.tsx
+│   ├── Skills.tsx
+│   ├── Experience.tsx
+│   ├── Projects.tsx
+│   └── Contact.tsx
+│
+├── data/
+│   └── resume.ts
+│
+├── lib/
+│   └── utils.ts
+│
+├── public/
+│   ├── resume.pdf
+│   ├── favicon.ico
+│   └── screenshots/
+│       ├── home.png
+│       ├── projects.png
+│       └── contact.png
+│
+├── .env.example
+├── .gitignore
+├── README.md
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
+> The folder structure above represents the expected organization of the portfolio. Update the component filenames if your actual project uses different names.
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the portfolio locally.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+* [Node.js](https://nodejs.org/)
+* [npm](https://www.npmjs.com/)
+* [Git](https://git-scm.com/)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/notneha/Portfolio.git
+```
+
+### Navigate to the Project
+
+```bash
+cd Portfolio
+```
+
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Development
+### Start Development Server
 
 ```bash
 npm run dev
 ```
 
-## Live Portfolio: [Portfolio]([https://your-portfolio-url.vercel.app](https://portfolio-delta-gilt-5exjz93co0.vercel.app/)).
+Open your browser and visit:
 
-### Build
+```text
+http://localhost:3000
+```
+
+### Build for Production
 
 ```bash
 npm run build
+```
+
+### Start Production Server
+
+```bash
 npm run start
 ```
 
-## Before you deploy
+---
 
-1. Add `public/resume.pdf` — the file linked from the "Download Resume" button.
-2. Add `public/favicon.ico` and `public/og-image.png` (1200×630) for the browser tab icon and social share previews.
-3. Update `siteUrl` in `app/layout.tsx`, `app/sitemap.ts`, and `app/robots.ts` to your real domain.
-4. (Optional) Set `NEXT_PUBLIC_CONTACT_FORM_ENDPOINT` in `.env` if you connect the contact form to a service like Formspree or Resend — see `.env.example`.
+## 🎨 Customization
 
-## Deployment
+The portfolio content can be updated from the resume data file:
+
+```text
+data/resume.ts
+```
+
+You can update:
+
+* Personal introduction.
+* Technical skills.
+* Work experience.
+* Projects.
+* Education.
+* Certifications.
+* Contact information.
+* Social media links.
+
+### Updating Your Information
+
+Open:
+
+```text
+data/resume.ts
+```
+
+Update the relevant information while keeping the existing data structure intact.
+
+To customize the website's appearance, modify the relevant components and styles inside the `app` and `components` directories.
+
+## 🌐 Live Portfolio
+
+**Portfolio:** [View My Portfolio](https://portfolio-delta-gilt-5exjz93co0.vercel.app/)
+
+> Replace the repository link above with your deployed website URL when available.
+
+---
+
+## 🚀 Deployment
 
 ### Vercel
 
+The portfolio can be deployed using [Vercel](https://vercel.com/), a platform optimized for Next.js applications.
+
+#### Deploy Using GitHub
+
+1. Open Vercel.
+2. Connect your GitHub account.
+3. Import the `notneha/Portfolio` repository.
+4. Configure environment variables if required.
+5. Deploy the application.
+
+#### Deploy Using Vercel CLI
+
 ```bash
-npm i -g vercel
+npm install -g vercel
+```
+
+```bash
 vercel
 ```
 
-Or connect the repo at [vercel.com/new](https://vercel.com/new) — zero config needed, Next.js is auto-detected.
-
 ### Netlify
 
+1. Connect your GitHub repository to Netlify.
+2. Select the portfolio project.
+3. Set the build command to:
+
 ```bash
-npm i -g netlify-cli
-netlify deploy
+npm run build
 ```
 
-Build command: `npm run build` · Publish directory: `.next` (Netlify's Next.js runtime handles the rest automatically once you install the **Next.js Runtime** plugin, which Netlify offers by default when it detects a Next.js project).
+4. Configure the Next.js deployment settings.
+5. Deploy the website.
 
-### Railway
+---
 
-1. Create a new project from your GitHub repo at [railway.app](https://railway.app).
-2. Railway auto-detects Next.js. Set the start command to `npm run start` if it isn't picked up automatically.
-3. No environment variables are required unless you've wired up the contact form.
+## 🔮 Future Improvements
 
-### Cloudflare Pages
+* Add more AI and machine learning projects.
+* Improve portfolio accessibility.
+* Add project filtering by technology.
+* Add detailed project case studies.
+* Integrate a functional contact form.
+* Add blog or technical articles section.
+* Improve SEO and performance.
+* Add more interactive animations.
 
-1. Connect the repo in the Cloudflare dashboard.
-2. Build command: `npm run build` · Build output directory: `.next`
-3. Add the `@cloudflare/next-on-pages` adapter if you want edge runtime output, or deploy as-is for standard Node compatibility mode.
+---
 
-## Folder structure
+## 🤝 Contributing
 
+Contributions, suggestions, and feedback are welcome.
+
+If you would like to contribute:
+
+1. Fork the repository.
+2. Create a new branch.
+
+```bash
+git checkout -b feature/improvement
 ```
-app/                Route files: layout, page, globals.css, sitemap, robots, loading
-components/          All UI components (Hero, Navbar, Skills, Experience, etc.)
-data/resume.ts       Single source of truth — every section reads from here
-lib/utils.ts         Shared helpers (cn class merge utility)
-public/              Static assets — add favicon.ico, og-image.png, resume.pdf here
+
+3. Make your changes.
+4. Commit your changes.
+
+```bash
+git commit -m "Add improvement"
 ```
 
-## Customization guide
+5. Push your branch.
 
-- **Content:** edit `data/resume.ts` only — every component reads from these exports.
-- **Colors:** edit the `colors` block in `tailwind.config.ts`. The accent/secondary pair drives gradients, tags, and hover states throughout.
-- **Fonts:** swap the Google Fonts imports in `app/layout.tsx` (`Space_Grotesk`, `Inter`, `JetBrains_Mono`).
-- **Sections:** each section is a standalone component in `components/`; reorder or remove them in `app/page.tsx`.
-- **Contact form:** currently front-end only. Point it at a form backend by reading `process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT` inside `components/contact.tsx`'s `onSubmit`.
+```bash
+git push origin feature/improvement
+```
 
-## Accessibility & performance notes
+6. Open a pull request.
 
-- All interactive elements have visible focus rings and ARIA labels.
-- Animations respect `prefers-reduced-motion`.
-- Images (once added) should use `next/image` for automatic optimization — the profile image placeholder in `Hero` is ready to be swapped for one.
-- Fonts load via `next/font/google` for zero layout shift and automatic self-hosting.
+---
+
+## 💎 Acknowledgements
+
+This portfolio was developed using modern web technologies and open-source tools.
+
+* [Next.js](https://nextjs.org/)
+* [React](https://react.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Framer Motion](https://motion.dev/)
+* [Lucide React](https://lucide.dev/)
+* [GitHub](https://github.com/)
+
+---
+
+## 📚 Learn More
+
+To learn more about the technologies used in this project:
+
+* [Next.js Documentation](https://nextjs.org/docs)
+* [React Documentation](https://react.dev/learn)
+* [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+* [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+* [Framer Motion Documentation](https://motion.dev/docs)
+
+---
+
+## ⭐ Give a Star
+
+If you find this portfolio useful or inspiring, feel free to explore the repository and give it a star.
+
+---
+
+## 📬 Connect With Me
+
+<div align="center">
+
+**Syeda Neha Zafar**
+
+Software Engineer | AI/ML Developer
+
+[![GitHub](https://img.shields.io/badge/GitHub-notneha-181717?style=for-the-badge\&logo=github)](https://github.com/notneha)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Syeda%20Neha%20Zafar-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/syeda-neha-zafar/)
+
+</div>
+
+---
+
+<div align="center">
+
+Made with ❤️ by Syeda Neha Zafar
+
+</div>
