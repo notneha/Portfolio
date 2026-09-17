@@ -3,7 +3,7 @@
 
 export const personal = {
   name: "Syeda Neha Zafar",
-  avatarUrl: "./Avatar.jfif",
+  avatarUrl: "/Avatar.png",
   title: "AI Engineer",
   location: "Karachi, Pakistan",
   phone: "0313-2374197",
